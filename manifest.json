@@ -12,11 +12,15 @@
   //   "matches": ["https://apps.delta.com/*"],
   //   "js": ["content.js"]
   // }],
-  // "permissions": ["activeTab"],
   "permissions": [
     "activeTab",
-    "https://apps.delta.com/*"
+    "https://apps.delta.com/*",
+    "https://deltaairlines.sharepoint.com/*"
   ],
+  "background": {
+    "scripts": ["event_page.js"],
+    "persistent": true
+  },
   "browser_action": {
       "default_name": "Display Loads",
       "default_popup": "popup.html"

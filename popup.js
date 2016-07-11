@@ -9,3 +9,10 @@ chrome.runtime.onMessage.addListener(function(request, sender) {
     message.innerText = request.message;
   }
 });
+
+// chrome.tabs.onUpdated.addListener(function(tabId, info) {
+//             console.log('updated');
+//     if (info.status == "complete") {
+//             console.log('loaded');
+//     }
+// });
